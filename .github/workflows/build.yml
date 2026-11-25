@@ -22,7 +22,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: '6.8.3'
+          gradle-version: '7.6.4'
 
       - name: Build and reobfuscate mod
         run: gradle build reobfJar --no-daemon
