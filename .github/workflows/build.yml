@@ -25,7 +25,7 @@ jobs:
           gradle-version: '7.6.4'
 
       - name: Build and reobfuscate mod
-        run: gradle build reobfJar --no-daemon
+        run: gradle clean build reobfJar --no-daemon
 
       - name: Upload compiled JAR
         uses: actions/upload-artifact@v4
